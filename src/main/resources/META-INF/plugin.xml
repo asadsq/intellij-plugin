@@ -15,5 +15,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.asadsq.intellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.asadsq.intellijplugin.startup.MyProjectActivity" />
+
+        <!-- Folder Highlighter: tints the full contents of the selected folder in the Project view -->
+        <projectViewNodeDecorator implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightNodeDecorator" />
+        <postStartupActivity implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightInstaller" />
     </extensions>
 </idea-plugin>
