@@ -10,8 +10,6 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
         <!-- Folder Highlighter: tints the full contents of the selected folder in the Project view -->
         <projectViewNodeDecorator implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightNodeDecorator" />
