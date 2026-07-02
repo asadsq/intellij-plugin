@@ -1,11 +1,12 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.asadsq.intellijplugin</id>
-    <name>intellij-plugin</name>
+    <name>Asad's Toolbox</name>
     <vendor>asadsq</vendor>
     <description><![CDATA[
-        <p><b>Folder Highlighter</b> makes the Project view easier to read.</p>
-        <p>When you select a folder, its full contents are highlighted with a subtle, theme-aware background tint &mdash; so you can see at a glance which files belong to that folder, no matter how deep or misleading the indentation gets.</p>
+        <p><b>Asad's Toolbox</b> is a collection of small IDE quality-of-life features.</p>
+        <p><b>Folder Highlighter</b> makes the Project view easier to read: when you select a folder, its full contents are highlighted with a subtle, theme-aware background tint &mdash; so you can see at a glance which files belong to that folder, no matter how deep or misleading the indentation gets.</p>
+        <p><b>Diff Jump</b> adds a floating pill to text diff viewers &mdash; including the commit dialog's side-by-side preview &mdash; showing how many changed blocks there are and letting you hop to the next or previous one with a click, in sync with the built-in Next/Previous Difference actions (F7 / Shift+F7).</p>
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
