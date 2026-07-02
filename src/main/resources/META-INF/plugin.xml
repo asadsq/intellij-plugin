@@ -14,5 +14,18 @@
         <!-- Folder Highlighter: tints the full contents of the selected folder in the Project view -->
         <projectViewNodeDecorator implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightNodeDecorator" />
         <postStartupActivity implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightInstaller" />
+        <!-- Diff Jump: floating next/prev navigation pill in text diff viewers -->
+        <diff.DiffExtension implementation="com.github.asadsq.intellijplugin.diffjump.DiffJumpExtension"/>
     </extensions>
+
+    <actions>
+        <action id="DiffJump.Next"
+                class="com.github.asadsq.intellijplugin.diffjump.JumpToNextDiffAction">
+            <add-to-group group-id="Diff.EditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="DiffJump.Previous"
+                class="com.github.asadsq.intellijplugin.diffjump.JumpToPreviousDiffAction">
+            <add-to-group group-id="Diff.EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
