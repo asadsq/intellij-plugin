@@ -4,4 +4,7 @@
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Folder Highlighter: selecting a folder in the Project view tints its full contents with a subtle, theme-aware background so its boundaries are easy to see.
+
+### Removed
+- Template demo sample code (tool window, project service, startup activity).
