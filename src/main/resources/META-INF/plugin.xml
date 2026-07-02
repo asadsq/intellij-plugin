@@ -4,8 +4,8 @@
     <name>intellij-plugin</name>
     <vendor>asadsq</vendor>
     <description><![CDATA[
-        <p><b>intellij-plugin</b> is a repository that provides a pure template to make it easier to create a new plugin project.</p>
-        <p>The main goal of this template is to speed up the setup phase of plugin development for both new and experienced developers by preconfiguring the project scaffold and CI, linking to the proper documentation pages, and keeping everything organized.</p>
+        <p><b>Folder Highlighter</b> makes the Project view easier to read.</p>
+        <p>When you select a folder, its full contents are highlighted with a subtle, theme-aware background tint &mdash; so you can see at a glance which files belong to that folder, no matter how deep or misleading the indentation gets.</p>
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -13,9 +13,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.asadsq.intellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.asadsq.intellijplugin.startup.MyProjectActivity" />
-
         <!-- Folder Highlighter: tints the full contents of the selected folder in the Project view -->
         <projectViewNodeDecorator implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightNodeDecorator" />
         <postStartupActivity implementation="com.github.asadsq.intellijplugin.folderhighlight.FolderHighlightInstaller" />
