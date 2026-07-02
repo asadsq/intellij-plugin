@@ -141,9 +141,9 @@ internal class DiffJumpWidget(
     }
 
     private fun refreshEnablement() {
-        val iterable = DiffJumpNavigation.iterable(dataContext())
-        prevButton.isEnabled = iterable?.canGoPrev() == true
-        nextButton.isEnabled = iterable?.canGoNext() == true
+        val context = dataContext()
+        prevButton.isEnabled = DiffJumpNavigation.canGoPrev(context)
+        nextButton.isEnabled = DiffJumpNavigation.canGoNext(context)
     }
 
     private fun dataContext() = DataManager.getInstance().getDataContext(dataComponent)

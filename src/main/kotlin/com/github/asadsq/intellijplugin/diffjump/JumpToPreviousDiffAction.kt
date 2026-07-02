@@ -14,7 +14,7 @@ internal class JumpToPreviousDiffAction : DumbAwareAction(
     override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
 
     override fun update(e: AnActionEvent) {
-        e.presentation.isEnabled = DiffJumpNavigation.iterable(e.dataContext)?.canGoPrev() == true
+        e.presentation.isEnabled = DiffJumpNavigation.canGoPrev(e.dataContext)
     }
 
     override fun actionPerformed(e: AnActionEvent) {
